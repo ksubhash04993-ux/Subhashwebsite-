@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BEU Result Portal</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>BEU Result Check</h1>
+
+    <form id="resultForm">
+      <input
+        type="text"
+        id="reg_no"
+        placeholder="Enter Registration Number"
+        required
+      />
+
+      <select id="semester" required>
+        <option value="">Select Semester</option>
+        <option value="1">Semester 1</option>
+        <option value="2">Semester 2</option>
+        <option value="3">Semester 3</option>
+        <option value="4">Semester 4</option>
+        <option value="5">Semester 5</option>
+        <option value="6">Semester 6</option>
+        <option value="7">Semester 7</option>
+        <option value="8">Semester 8</option>
+      </select>
+
+      <button type="submit">Show Result</button>
+    </form>
+
+    <div id="resultBox" style="display:none;">
+      <h2>Result</h2>
+      <pre id="resultData"></pre>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="js/result.js"></script>
+</body>
+</html>
